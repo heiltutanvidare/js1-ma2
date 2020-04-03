@@ -9,19 +9,29 @@ const myFunctionExpression = function() {
 
 // Question 2
 // Select the input in the HTML below by its class.
-// Add a click event listener. The callback function passed to the event
-// listener should log the sentence I was clicked.
+// Add a click event listener.
+// The callback function passed to the event listener should log the sentence I was clicked.
 // You can pass the function in directly, declare it and pass it in by its name or
 // assign it to a variable and pass it in by the variable name.
 
-// My question 2 answer
+const myButton = document.querySelector(".btn");
+
+function clickLogger() {
+    console.log("I was clicked");
+}
+
+myButton.addEventListener("click", clickLogger);
 
 // Question 3
 // Select the input in the HTML below by its id.
 // Add a keydown event listener. The callback function passed to the event listener
 // should log the value of the key that was pressed.
 
-// My question 3 answer
+const myInput = document.querySelector("#firstName");
+
+myInput.addEventListener("keydown", function() {
+    console.log(event.key);
+});
 
 // Question 4
 
