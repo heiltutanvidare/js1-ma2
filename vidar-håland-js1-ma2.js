@@ -38,7 +38,7 @@ myInput.addEventListener("keydown", function() {
 // Add a mouseover event listener.
 // The callback function should add a class called hover to the button.
 
-const dogButton = document.querySelector('[data-animal="dog"]');
+const dogButton = document.querySelector("button");
 
 function addHoverClass() {
     event.target.classList.add("hover");
@@ -47,8 +47,17 @@ function addHoverClass() {
 dogButton.addEventListener("mouseover", addHoverClass);
 
 // Question 5
+// Select the button in the HTML below by its data attribute
+// and add a mouseout event listener to it.
+// The callback function should remove the class called hover from the button.
 
-// My question 5 answer
+const dogButtonTwo = document.querySelector('[data-animal="dog"]');
+
+function removeHoverClass() {
+    event.target.classList.remove("hover");
+}
+
+dogButtonTwo.addEventListener("mouseout", removeHoverClass);
 
 // Question 6
 
