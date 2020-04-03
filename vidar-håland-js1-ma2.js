@@ -60,8 +60,20 @@ function removeHoverClass() {
 dogButtonTwo.addEventListener("mouseout", removeHoverClass);
 
 // Question 6
+// Select all the li tags from the HTML below.
+// Using a loop, add a mouseover event listener to each tag.
+// The callback function should log the value of the data attribute on each element
+// when the cursor moves over it.
 
-// My question 6 answer
+const listItems = document.querySelectorAll("li");
+
+function logListItemValue() {
+    console.log(event.target.innerText);
+}
+
+for (let i = 0; i < listItems.length; i++) {
+    listItems[i].addEventListener("mouseover", logListItemValue);
+}
 
 // Question 7
 
