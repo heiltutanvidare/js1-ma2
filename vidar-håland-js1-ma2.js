@@ -76,16 +76,49 @@ for (let i = 0; i < listItems.length; i++) {
 }
 
 // Question 7
+// Convert the if-else-if statement below to a switch statement.
+// Use the code inside the else block in the default block in the switch.
 
-// My question 7 answer
+const animal = "cow";
+
+switch (animal) {
+    case "cat":
+        console.log("Meow");
+        break;
+    case "cow":
+        console.log("Moo");
+        break;
+    case "bird":
+        console.log("Tweet");
+        break;
+    default:
+        console.log("Harrumph");
+}
 
 // Question 8
+// Convert the for loop code below to a forEach loop.
 
-// My question 8 answer
+const sheep = ["Malcolm", "Anders", "Marie"];
+
+sheep.forEach(function(sheep) {
+    console.log(sheep);
+});
 
 // Question 9
+// Create a timer that logs the word hello every half a second.
+// It must stop after its logged the word 6 times.
 
-// My question 9 answer
+function sayHello() {
+    console.log("Hello");
+
+    if (counter === 5) {
+        clearInterval(intervalId);
+    }
+    counter++;
+}
+
+let counter = 0;
+const intervalId = setInterval(sayHello, 500);
 
 // Question 10
 
