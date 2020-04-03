@@ -68,7 +68,7 @@ dogButtonTwo.addEventListener("mouseout", removeHoverClass);
 const listItems = document.querySelectorAll("li");
 
 function logListItemValue() {
-    console.log(event.target.innerText);
+    console.log(event.target.dataset.animal);
 }
 
 for (let i = 0; i < listItems.length; i++) {
