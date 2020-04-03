@@ -100,8 +100,8 @@ switch (animal) {
 
 const sheep = ["Malcolm", "Anders", "Marie"];
 
-sheep.forEach(function(sheep) {
-    console.log(sheep);
+sheep.forEach(function(name) {
+    console.log(name);
 });
 
 // Question 9
@@ -128,7 +128,7 @@ const intervalId = setInterval(sayHello, 500);
 const myContainer = document.querySelector(".container");
 
 function updateDivText() {
-    myContainer.innerText = "Text updated after waiting 2 seconds";
+    myContainer.innerText = "Text updated";
 }
 
 setTimeout(updateDivText, 2000);
