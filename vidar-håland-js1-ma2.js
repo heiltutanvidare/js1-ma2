@@ -121,5 +121,14 @@ let counter = 0;
 const intervalId = setInterval(sayHello, 500);
 
 // Question 10
+// Select the div from the HTML below.
+// Write code that updates the div's text to say Text updated after waiting 2 seconds.
+// You can use either innerText or innerHTML to update the text.
 
-// My question 10 answer
+const myContainer = document.querySelector(".container");
+
+function updateDivText() {
+    myContainer.innerText = "Text updated after waiting 2 seconds";
+}
+
+setTimeout(updateDivText, 2000);
